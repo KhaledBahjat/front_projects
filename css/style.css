@@ -39,20 +39,22 @@ a {
   text-decoration: none;
 }
 /* utilty classes */
-.container{
+.container {
   max-width: 1200px;
   margin: auto;
-
+}
+.txt-primery{
+  color: var(--light-brown);
 }
 /* header start */
-#header{
+#header {
   position: fixed;
   background-color: #fff;
   width: 100%;
   border-bottom: solid 1px #ccc;
 }
 
-#header .navbar{
+#header .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,55 +63,53 @@ a {
   height: 90px;
 }
 
-#header .navbar .logo{
+#header .navbar .logo {
   width: 250px;
 }
 
-#header .navbar ul{
+#header .navbar ul {
   display: flex;
 }
 
-#header .navbar ul li a{
+#header .navbar ul li a {
   color: var(--dark-gray);
   font-size: 18px;
   margin: 0 20px;
   font-weight: 500;
-  transition:all 0.3 ease;
+  transition: all 0.3 ease;
 }
-#header .navbar ul li a:hover{
+#header .navbar ul li a:hover {
   color: var(--light-brown);
 }
 /* hedar end */
 
-
 /* home start */
-#home{
-  background: url("/assets/imgs/home-bg.png" ) center no-repeat;
+#home {
+  background: url("/assets/imgs/home-bg.png") center no-repeat;
   background-size: 100%;
   background-color: var(--bg-color);
 }
-#home .home-content{
+#home .home-content {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   min-height: 100vh;
   gap: 3rem;
 }
-#home .home-content .content-text h3{
+#home .home-content .content-text h3 {
   font-size: 24px;
   font-weight: 400;
-
 }
-#home .home-content .content-text h1{
+#home .home-content .content-text h1 {
   font-size: 80px;
   margin: 20px 0;
   line-height: 1.3;
 }
-#home .home-content .content-text p{
+#home .home-content .content-text p {
   font-size: 18px;
   line-height: 1.5;
 }
-#home .home-content .content-text .btn{
+#home .home-content .content-text .btn {
   display: inline-block;
   margin-top: 2rem;
   background-color: var(--light-brown);
@@ -118,14 +118,40 @@ a {
   border-radius: 30px;
   transition: all 0.3s ease;
 }
-#home .home-content .content-text .btn i{
+#home .home-content .content-text .btn i {
   margin-left: 5px;
 }
-#home .home-content .content-text .btn:hover{
+#home .home-content .content-text .btn:hover {
   background-color: var(--dark-gray);
 }
-#home .home-content img{
+#home .home-content img {
   display: block;
   width: 100%;
 }
 /* home end */
+
+
+/* about start */
+#about{
+  padding: 6rem 0;
+}
+
+#about .row{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+#about .row .about-conent h2{
+  text-transform: uppercase;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+#about .row .about-conent .item{
+  margin: 2rem 0;
+}
+#about .row .about-conent .item h3{
+  margin: 5px 0;
+}
+/* about end */
