@@ -1,0 +1,76 @@
+/* import font from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap");
+/* to reset style start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* to reset style end */
+
+/* my colors start */
+:root {
+  --bg-color: #f1f1f1;
+  --bg-secondery: #fbfbfb;
+  --dark-gray: #333;
+  --light-brown: #c7a17a;
+  --black: #1f2226;
+}
+/* my colors end */
+/* font for body */
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--bg-color);
+}
+/* font for heading */
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+}
+/* intial list style */
+ul {
+  list-style: none;
+}
+
+/* links intial style */
+a {
+  text-decoration: none;
+}
+
+/* header start */
+#header{
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  border-bottom: solid 1px #ccc;
+}
+
+#header .navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  height: 90px;
+}
+
+#header .navbar .logo{
+  width: 250px;
+}
+
+#header .navbar ul{
+  display: flex;
+}
+
+#header .navbar ul li a{
+  color: var(--dark-gray);
+  font-size: 18px;
+  margin: 0 20px;
+  font-weight: 500;
+  transition:all 0.3 ease;
+}
+#header .navbar ul li a:hover{
+  color: var(--light-brown);
+}
+/* hedar end */
