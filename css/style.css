@@ -20,13 +20,14 @@
 /* font for body */
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color); */
 }
 /* font for heading */
 h1,
 h2,
 h3 {
   font-family: "Oswald", sans-serif;
+  color: var(--dark-gray);
 }
 /* intial list style */
 ul {
@@ -37,7 +38,12 @@ ul {
 a {
   text-decoration: none;
 }
+/* utilty classes */
+.container{
+  max-width: 1200px;
+  margin: auto;
 
+}
 /* header start */
 #header{
   position: fixed;
@@ -77,4 +83,49 @@ a {
 
 
 /* home start */
+#home{
+  background: url("/assets/imgs/home-bg.png" ) center no-repeat;
+  background-size: 100%;
+  background-color: var(--bg-color);
+}
+#home .home-content{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  min-height: 100vh;
+  gap: 3rem;
+}
+#home .home-content .content-text h3{
+  font-size: 24px;
+  font-weight: 400;
+
+}
+#home .home-content .content-text h1{
+  font-size: 80px;
+  margin: 20px 0;
+  line-height: 1.3;
+}
+#home .home-content .content-text p{
+  font-size: 18px;
+  line-height: 1.5;
+}
+#home .home-content .content-text .btn{
+  display: inline-block;
+  margin-top: 2rem;
+  background-color: var(--light-brown);
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+#home .home-content .content-text .btn i{
+  margin-left: 5px;
+}
+#home .home-content .content-text .btn:hover{
+  background-color: var(--dark-gray);
+}
+#home .home-content img{
+  display: block;
+  width: 100%;
+}
 /* home end */
